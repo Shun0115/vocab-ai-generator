@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>単語帳生成AI</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>🧠 単語帳生成AIアプリ</h2>
+    <form method="POST">
+        <textarea name="english_text" rows="8" cols="60">{{ user_input }}</textarea><br>
+        <button type="submit">▶︎ 単語帳を生成する</button>
+    </form>
+
+    {% if vocab_list %}
+    <h3>📘 生成された単語帳：</h3>
+    <table border="1">
+        <tr><th>単語</th><th>意味</th><th>例文</th></tr>
+        {% for item in vocab_list %}
+        <tr>
+            <td>{{ item.word }}</td>
+            <td>{{ item.meaning }}</td>
+            <td>{{ item.example }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
