@@ -22,8 +22,12 @@ def save_history(entry):
 
 def load_history():
     if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                history = json.load(f)
+                return history[:10]  # 最新の10件のみ返す
+        except json.JSONDecodeError:
+            return []
     return []
 
 # 環境変数を読み込み

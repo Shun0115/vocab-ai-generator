@@ -1,31 +1,91 @@
 [
   {
-    "input": " The Asian neighbors' top diplomats met for the first time since their talks in Tokyo in March. They are visiting the Malaysian capital to attend meetings related to the Association of Southeast Asian Nations.",
+    "input": "Leaks are often hidden in the small details of our work lives, the ministry said.\r\nIf our ideals and beliefs are not strong... they may eventually plummet into the criminal abyss designed by foreign spy agencies.",
     "vocab": [
       {
-        "word": "1. diplomats",
-        "meaning": "外交官",
-        "example": "The diplomats from different countries gathered to discuss important matters."
+        "word": "details",
+        "meaning": "詳細、細部",
+        "example": "Pay attention to the small details in your work."
       },
       {
-        "word": "2. met",
-        "meaning": "会う",
-        "example": "They met at the conference to discuss the latest developments."
+        "word": "ideals",
+        "meaning": "理想、信念",
+        "example": "She holds strong ideals about equality and justice."
       },
       {
-        "word": "3. talks",
-        "meaning": "会談",
-        "example": "The talks between the two countries were held in a peaceful atmosphere."
+        "word": "plummet",
+        "meaning": "急落する、急落",
+        "example": "The stock prices plummeted after the company's scandal."
       },
       {
-        "word": "4. capital",
-        "meaning": "首都",
-        "example": "The capital of Japan is Tokyo."
+        "word": "abyss",
+        "meaning": "深淵、奈落",
+        "example": "He felt like he was falling into an abyss of despair."
       },
       {
-        "word": "5. attend",
-        "meaning": "出席する",
-        "example": "He will attend the meeting tomorrow to discuss the new project."
+        "word": "spy",
+        "meaning": "スパイ、密偵",
+        "example": "The government uncovered a spy in their midst."
+      }
+    ]
+  },
+  {
+    "input": "Hou was later held criminally responsible, the ministry said, without specifying his punishment.\r\nThe ministry also detailed a third case in which a high-flying young official lost his job after sharing confidential information with a relative who photographed and sent it to overseas spy agencies.",
+    "vocab": [
+      {
+        "word": "1. criminally",
+        "meaning": "違法に",
+        "example": "He was charged criminally for his actions."
+      },
+      {
+        "word": "2. responsible",
+        "meaning": "責任がある",
+        "example": "She is responsible for the project's success."
+      },
+      {
+        "word": "3. confidential",
+        "meaning": "機密の",
+        "example": "This document is confidential and should not be shared."
+      },
+      {
+        "word": "4. official",
+        "meaning": "役人",
+        "example": "The government official made an announcement."
+      },
+      {
+        "word": "5. agencies",
+        "meaning": "機関",
+        "example": "The intelligence agencies are investigating the case."
+      }
+    ]
+  },
+  {
+    "input": "It described a case in which a provincial government employee surnamed Li fell into a meticulously designed honeytrap while travelling overseas for work.",
+    "vocab": [
+      {
+        "word": "case",
+        "meaning": "事例、事件",
+        "example": "The detective worked on a difficult case last week."
+      },
+      {
+        "word": "provincial",
+        "meaning": "地方の",
+        "example": "The provincial government announced new regulations."
+      },
+      {
+        "word": "employee",
+        "meaning": "従業員",
+        "example": "The company is hiring new employees."
+      },
+      {
+        "word": "surnamed",
+        "meaning": "姓を持つ",
+        "example": "The author is surnamed Smith."
+      },
+      {
+        "word": "honeytrap",
+        "meaning": "罠、誘惑",
+        "example": "The spy fell into a cleverly laid honeytrap."
       }
     ]
   }
