@@ -1,0 +1,32 @@
+[
+  {
+    "input": " The Asian neighbors' top diplomats met for the first time since their talks in Tokyo in March. They are visiting the Malaysian capital to attend meetings related to the Association of Southeast Asian Nations.",
+    "vocab": [
+      {
+        "word": "1. diplomats",
+        "meaning": "外交官",
+        "example": "The diplomats from different countries gathered to discuss important matters."
+      },
+      {
+        "word": "2. met",
+        "meaning": "会う",
+        "example": "They met at the conference to discuss the latest developments."
+      },
+      {
+        "word": "3. talks",
+        "meaning": "会談",
+        "example": "The talks between the two countries were held in a peaceful atmosphere."
+      },
+      {
+        "word": "4. capital",
+        "meaning": "首都",
+        "example": "The capital of Japan is Tokyo."
+      },
+      {
+        "word": "5. attend",
+        "meaning": "出席する",
+        "example": "He will attend the meeting tomorrow to discuss the new project."
+      }
+    ]
+  }
+]

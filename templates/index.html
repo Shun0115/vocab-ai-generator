@@ -24,5 +24,24 @@
         {% endfor %}
     </table>
     {% endif %}
+
+    {% if history %}
+    <h3>📜 履歴（最大10件）：</h3>
+    {% for item in history %}
+        <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+            <strong>入力文：</strong><br>{{ item.input }}<br><br>
+            <table border="1">
+                <tr><th>単語</th><th>意味</th><th>例文</th></tr>
+                {% for v in item.vocab %}
+                    <tr>
+                        <td>{{ v.word }}</td>
+                        <td>{{ v.meaning }}</td>
+                        <td>{{ v.example }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endfor %}
+{% endif %}
 </body>
 </html>

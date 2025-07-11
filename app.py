@@ -2,6 +2,29 @@ from flask import Flask, request, render_template
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+import json
+
+HISTORY_FILE = "vocab_history.json"
+def save_history(entry):
+    
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            history = json.load(f)
+
+    else:
+        history = []
+
+    history.insert(0, entry)  # 新しいエントリを先頭に追加
+    history = history[:10]  # 最新の10件のみ保持
+
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2) 
+
+def load_history():
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 # 環境変数を読み込み
 load_dotenv()
@@ -53,10 +76,15 @@ def generate_vocab(text):
             if len(parts) == 3:
                 vocab_list.append({
                     "word": parts[0],
-                    "meaning": parts[1],
-                    "example": parts[2]
+                    "meaning": parts[1].replace("意味:", "").strip(),
+                    "example": parts[2].replace("例文:", "").strip()
                 })
-    
+
+    save_history({
+        "input": text,
+        "vocab": vocab_list
+    })
+
     return vocab_list
 
 @app.route("/", methods=["GET", "POST"])
@@ -66,7 +94,8 @@ def index():
     if request.method == "POST":
         user_input = request.form["english_text"]
         vocab_list = generate_vocab(user_input)
-    return render_template("index.html", vocab_list=vocab_list, user_input=user_input)
+    history = load_history()
+    return render_template("index.html", vocab_list=vocab_list, user_input=user_input, history=history)
 
 if __name__ == "__main__":
     app.run(debug=True)
