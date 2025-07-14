@@ -4,6 +4,60 @@
     <title>単語帳生成AI</title>
     <meta charset="utf-8">
 </head>
+<script>
+function speak(text) {
+    // 数字だけの場合は再生しない
+    if (/^\d+$/.test(text)) {
+        return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US'; // 英語発音
+
+    // より自然な声を選択（女性の声など）
+    const voices = window.speechSynthesis.getVoices();
+    const preferredVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Female')) 
+                        || voices.find(v => v.lang === 'en-US');
+    if (preferredVoice) {
+        utterance.voice = preferredVoice;
+    }
+
+    utterance.rate = 0.9; // ゆっくりめで自然に
+    utterance.pitch = 1.0; // 普通の高さ
+
+    window.speechSynthesis.speak(utterance);
+}
+</script>
+<script>
+let voices = [];
+
+// iOSでは getVoices() の反映が遅いことがあるので、明示的に呼ぶ
+window.speechSynthesis.onvoiceschanged = () => {
+    voices = window.speechSynthesis.getVoices();
+};
+
+function speak(text) {
+    // 数字のみならスキップ
+    if (/^\d+$/.test(text)) return;
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US'; // 🇺🇸 英語発音
+
+    // iOSでは voice.name の指定が効かない場合があるので、lang優先で設定
+    const enVoice = voices.find(v => v.lang === 'en-US');
+
+    if (enVoice) {
+        utterance.voice = enVoice;
+    }
+
+    utterance.rate = 0.9;   // 再生速度（ゆっくりめ）
+    utterance.pitch = 1.0;  // 声の高さ（普通）
+
+    // iOS Safari 対応のため、再生前に stop() を呼ぶと安定する
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+}
+</script>
 <body>
     <h2>🧠 単語帳生成AIアプリ</h2>
     <form method="POST">
@@ -13,35 +67,47 @@
 
     {% if vocab_list %}
     <h3>📘 生成された単語帳：</h3>
+    <a href="/download_csv">
+    <button>⬇️ CSVダウンロード</button>
+    </a>
+    <table border="1">
+    <tr><th>単語</th><th>意味</th><th>例文</th><th>音声</th></tr>
+    {% for item in vocab_list %}
+    <tr>
+        <td>{{ item.word }}</td>
+        <td>{{ item.meaning }}</td>
+        <td>{{ item.example }}</td>
+        <td><button onclick="speak('{{ item.word }}')">🔈</button></td>
+    </tr>
+    {% endfor %}
+</table>
+
+    {% endif %}
+
+{% if history %}
+<h3>📜 履歴（最大10件）：</h3>
+{% for item in history[:10] %}
+<div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+    <form method="POST" action="/delete/{{ loop.index0 }}" style="float:right;">
+        <button type="submit" onclick="return confirm('この履歴を削除しますか？')">🗑</button>
+    </form>
+    <strong>入力文：</strong><br>{{ item.input }}<br><br>
     <table border="1">
         <tr><th>単語</th><th>意味</th><th>例文</th></tr>
-        {% for item in vocab_list %}
+        {% for v in item.vocab %}
         <tr>
-            <td>{{ item.word }}</td>
-            <td>{{ item.meaning }}</td>
-            <td>{{ item.example }}</td>
+            <td>{{ v.word }}</td>
+            <td>{{ v.meaning }}</td>
+            <td>{{ v.example }}</td>
         </tr>
         {% endfor %}
     </table>
-    {% endif %}
-
-    {% if history %}
-<h3>📜 履歴（最大10件）：</h3>
-{% for item in history[:10] %}
-    <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
-        <strong>入力文：</strong><br>{{ item.input }}<br><br>
-        <table border="1">
-            <tr><th>単語</th><th>意味</th><th>例文</th></tr>
-            {% for v in item.vocab %}
-                <tr>
-                    <td>{{ v.word }}</td>
-                    <td>{{ v.meaning }}</td>
-                    <td>{{ v.example }}</td>
-                </tr>
-            {% endfor %}
-        </table>
-    </div>
+</div>
 {% endfor %}
+
+<form method="POST" action="/delete_all">
+    <button type="submit" onclick="return confirm('履歴をすべて削除しますか？')">❌ 履歴をすべて削除</button>
+</form>
 {% endif %}
 </body>
 </html>

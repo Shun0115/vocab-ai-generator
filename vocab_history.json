@@ -1,91 +1,301 @@
 [
   {
-    "input": "Leaks are often hidden in the small details of our work lives, the ministry said.\r\nIf our ideals and beliefs are not strong... they may eventually plummet into the criminal abyss designed by foreign spy agencies.",
+    "input": "For the math section, the rate slid to 58.2 pct from 63.6 pct among elementary school sixth-graders and to 48.8 pct from 53.0 pct among junior high school third-graders.",
     "vocab": [
       {
-        "word": "details",
-        "meaning": "詳細、細部",
-        "example": "Pay attention to the small details in your work."
+        "word": "rate",
+        "meaning": "比率",
+        "example": "The interest rate on the loan is 3%."
       },
       {
-        "word": "ideals",
-        "meaning": "理想、信念",
-        "example": "She holds strong ideals about equality and justice."
+        "word": "slide",
+        "meaning": "滑る、下がる",
+        "example": "The company's stock price slid by 10% after the earnings report."
       },
       {
-        "word": "plummet",
-        "meaning": "急落する、急落",
-        "example": "The stock prices plummeted after the company's scandal."
+        "word": "elementary",
+        "meaning": "初等の",
+        "example": "She teaches at an elementary school."
       },
       {
-        "word": "abyss",
-        "meaning": "深淵、奈落",
-        "example": "He felt like he was falling into an abyss of despair."
+        "word": "junior",
+        "meaning": "後輩の、下級の",
+        "example": "He is a junior member of the team."
       },
       {
-        "word": "spy",
-        "meaning": "スパイ、密偵",
-        "example": "The government uncovered a spy in their midst."
+        "word": "grader",
+        "meaning": "学年",
+        "example": "She is a third-grader in junior high school."
       }
     ]
   },
   {
-    "input": "Hou was later held criminally responsible, the ministry said, without specifying his punishment.\r\nThe ministry also detailed a third case in which a high-flying young official lost his job after sharing confidential information with a relative who photographed and sent it to overseas spy agencies.",
+    "input": "  In science, whose test was conducted for the first time in three years, the correct answer rate rose to 57.3 pct from 49.7 pct in fiscal 2022 among elementary school sixth-graders.",
     "vocab": [
       {
-        "word": "1. criminally",
-        "meaning": "違法に",
-        "example": "He was charged criminally for his actions."
+        "word": "science",
+        "meaning": "科学",
+        "example": "She is studying computer science at university."
       },
       {
-        "word": "2. responsible",
-        "meaning": "責任がある",
-        "example": "She is responsible for the project's success."
+        "word": "test",
+        "meaning": "テスト",
+        "example": "I have a math test tomorrow."
       },
       {
-        "word": "3. confidential",
-        "meaning": "機密の",
-        "example": "This document is confidential and should not be shared."
+        "word": "conducted",
+        "meaning": "行われた",
+        "example": "The experiment was conducted by a team of researchers."
       },
       {
-        "word": "4. official",
-        "meaning": "役人",
-        "example": "The government official made an announcement."
+        "word": "correct",
+        "meaning": "正しい",
+        "example": "Please choose the correct answer from the options."
       },
       {
-        "word": "5. agencies",
-        "meaning": "機関",
-        "example": "The intelligence agencies are investigating the case."
+        "word": "rate",
+        "meaning": "割合",
+        "example": "The unemployment rate has been decreasing steadily."
       }
     ]
   },
   {
-    "input": "It described a case in which a provincial government employee surnamed Li fell into a meticulously designed honeytrap while travelling overseas for work.",
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
     "vocab": [
       {
-        "word": "case",
-        "meaning": "事例、事件",
-        "example": "The detective worked on a difficult case last week."
+        "word": "rate",
+        "meaning": "割合、率",
+        "example": "The unemployment rate in the country has been steadily decreasing."
       },
       {
-        "word": "provincial",
-        "meaning": "地方の",
-        "example": "The provincial government announced new regulations."
+        "word": "sagged",
+        "meaning": "下がる、垂れ下がる",
+        "example": "The old bridge sagged under the weight of the heavy trucks."
       },
       {
-        "word": "employee",
-        "meaning": "従業員",
-        "example": "The company is hiring new employees."
+        "word": "struggled",
+        "meaning": "苦労する、もがく",
+        "example": "He struggled to finish the difficult project on time."
       },
       {
-        "word": "surnamed",
-        "meaning": "姓を持つ",
-        "example": "The author is surnamed Smith."
+        "word": "writing tasks",
+        "meaning": "書き込み課題、ライティング課題",
+        "example": "The students were assigned various writing tasks to improve their language skills."
       },
       {
-        "word": "honeytrap",
-        "meaning": "罠、誘惑",
-        "example": "The spy fell into a cleverly laid honeytrap."
+        "word": "introduced",
+        "meaning": "導入する、紹介する",
+        "example": "The company introduced a new product line last month."
+      }
+    ]
+  },
+  {
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "vocab": [
+      {
+        "word": "rate",
+        "meaning": "比率",
+        "example": "The unemployment rate in the city decreased by 2% last month."
+      },
+      {
+        "word": "sagged",
+        "meaning": "下がる",
+        "example": "The stock market sagged after the disappointing earnings report."
+      },
+      {
+        "word": "pct",
+        "meaning": "パーセント",
+        "example": "The store is offering a 20 pct discount on all items."
+      },
+      {
+        "word": "struggled",
+        "meaning": "苦労する",
+        "example": "She struggled with the difficult math problem for hours."
+      },
+      {
+        "word": "format",
+        "meaning": "形式",
+        "example": "The report must be submitted in a specific format."
+      }
+    ]
+  },
+  {
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "vocab": [
+      {
+        "word": "rate",
+        "meaning": "比率",
+        "example": "The unemployment rate in the country has been steadily decreasing."
+      },
+      {
+        "word": "sagged",
+        "meaning": "下がる",
+        "example": "The stock prices sagged after the company announced its quarterly earnings."
+      },
+      {
+        "word": "pct (abbreviation for percent)",
+        "meaning": "パーセント",
+        "example": "The product saw a sales increase of 10 pct last quarter."
+      },
+      {
+        "word": "struggled",
+        "meaning": "苦労する",
+        "example": "She struggled to finish her homework before the deadline."
+      },
+      {
+        "word": "task",
+        "meaning": "課題",
+        "example": "Completing this task will require teamwork and collaboration."
+      }
+    ]
+  },
+  {
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "vocab": [
+      {
+        "word": "rate",
+        "meaning": "比率",
+        "example": "The unemployment rate in the country has been steadily increasing."
+      },
+      {
+        "word": "sagged",
+        "meaning": "下がる",
+        "example": "The sales figures sagged after the holiday season."
+      },
+      {
+        "word": "pct",
+        "meaning": "パーセント",
+        "example": "The company reported a 10 pct increase in profits."
+      },
+      {
+        "word": "format",
+        "meaning": "フォーマット",
+        "example": "Please make sure to save the document in the correct format."
+      },
+      {
+        "word": "struggled",
+        "meaning": "苦労する",
+        "example": "She struggled to finish her homework on time."
+      }
+    ]
+  },
+  {
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "vocab": [
+      {
+        "word": "1. sagged",
+        "meaning": "下落する",
+        "example": "The sales of the company sagged due to economic downturn."
+      },
+      {
+        "word": "2. rate",
+        "meaning": "割合、率",
+        "example": "The unemployment rate in the country has been increasing."
+      },
+      {
+        "word": "3. third-graders",
+        "meaning": "三年生",
+        "example": "The third-graders had a field trip to the museum."
+      },
+      {
+        "word": "4. format",
+        "meaning": "形式、フォーマット",
+        "example": "The document should be saved in PDF format."
+      },
+      {
+        "word": "5. struggled",
+        "meaning": "苦労する、もがく",
+        "example": "She struggled with the difficult math problem."
+      }
+    ]
+  },
+  {
+    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "vocab": [
+      {
+        "word": "rate",
+        "meaning": "率、割合",
+        "example": "The unemployment rate in the country has been steadily decreasing."
+      },
+      {
+        "word": "sagged",
+        "meaning": "下がる、低下する",
+        "example": "The stock prices sagged after the company announced poor quarterly earnings."
+      },
+      {
+        "word": "struggled",
+        "meaning": "苦労する、困難に直面する",
+        "example": "She struggled to finish the marathon, but eventually crossed the finish line."
+      },
+      {
+        "word": "writing",
+        "meaning": "書くこと、執筆",
+        "example": "Her writing skills improved after taking a creative writing class."
+      },
+      {
+        "word": "tasks",
+        "meaning": "仕事、課題",
+        "example": "He had a lot of tasks to complete before the deadline."
+      }
+    ]
+  },
+  {
+    "input": "The correct answer rate for the Japanese language section dropped to 67.0 pct from 67.8 pct among elementary school sixth-graders.",
+    "vocab": [
+      {
+        "word": "answer",
+        "meaning": "答え",
+        "example": "She quickly found the answer to the difficult question."
+      },
+      {
+        "word": "rate",
+        "meaning": "割合",
+        "example": "The success rate of the project was higher than expected."
+      },
+      {
+        "word": "Japanese",
+        "meaning": "日本語",
+        "example": "He is studying Japanese at the university."
+      },
+      {
+        "word": "section",
+        "meaning": "部分",
+        "example": "Please turn to the next section of the book."
+      },
+      {
+        "word": "dropped",
+        "meaning": "減少した",
+        "example": "The temperature dropped significantly overnight."
+      }
+    ]
+  },
+  {
+    "input": "he average correct answer rates in Japanese language and math sections of a national achievement test for students in Japan in fiscal 2025 fell from the previous year, the education ministry said Monday.",
+    "vocab": [
+      {
+        "word": "1. average",
+        "meaning": "平均",
+        "example": "The average score on the test was 75%."
+      },
+      {
+        "word": "2. correct",
+        "meaning": "正しい",
+        "example": "Make sure to give the correct answer."
+      },
+      {
+        "word": "3. achievement",
+        "meaning": "達成",
+        "example": "Winning the competition was a great achievement for him."
+      },
+      {
+        "word": "4. ministry",
+        "meaning": "省庁",
+        "example": "The Ministry of Education is responsible for the school system."
+      },
+      {
+        "word": "5. fiscal",
+        "meaning": "予算の",
+        "example": "The company's fiscal year ends in March."
       }
     ]
   }

@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,redirect, url_for, Response
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
@@ -66,12 +66,6 @@ def generate_vocab(text):
 
     result_text = response.choices[0].message.content.strip()
 
-    with open("vocab_log.txt", "w", encoding="utf-8") as f:
-        f.write("ユーザー入力:\n")
-        f.write(text + "\n\n")
-        f.write("生成結果:\n")
-        f.write(result_text + "\n")
-
     # パース処理(後で分割するため)
     vocab_list = []
     for line in result_text.split("\n"):
@@ -101,5 +95,43 @@ def index():
     history = load_history()
     return render_template("index.html", vocab_list=vocab_list, user_input=user_input, history=history)
 
+@app.route("/delete/<int:index>", methods=["POST"])
+def delete_entry(index):
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            history = json.load(f)
+        if 0 <= index < len(history):
+            del history[index]
+            with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+                json.dump(history, f, ensure_ascii=False, indent=2)
+    return redirect(url_for("index"))
+
+@app.route("/delete_all", methods=["POST"])
+def delete_all():
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
+    return redirect(url_for("index"))
+
+@app.route("/download_csv")
+def download_csv():
+    history = load_history()
+    if not history:
+        return "履歴がありません", 404
+
+    vocab_list = history[0]["vocab"]
+
+    csv_content = "単語,意味,例文\n"
+    for item in vocab_list:
+        csv_content += f"{item['word']},{item['meaning']},{item['example']}\n"
+
+    return Response(
+        csv_content,
+        mimetype="text/csv",
+        headers={"Content-Disposition": "attachment;filename=vocab.csv"}
+    )
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+
