@@ -1,0 +1,26 @@
+/* light mode (デフォルト) */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #dddddd;
+}
+
+/* テーブル・ボタンなどの追加スタイル */
+body.dark-mode .table {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+body.dark-mode .btn {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}

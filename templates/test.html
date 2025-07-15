@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>英単語テスト</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h2>🧠 単語テスト</h2>
+    {% if question %}
+    <form method="POST" class="mb-3">
+      <p><strong>{{ question.word }}</strong> の意味は？</p>
+      <input type="text" name="answer" class="form-control mb-2" placeholder="日本語訳を入力">
+      <input type="hidden" name="correct_word" value="{{ question.word }}">
+      <input type="hidden" name="correct_meaning" value="{{ question.meaning }}">
+
+      <button type="submit" class="btn btn-primary">回答する</button>
+    </form>
+    {% endif %}
+
+    {% if result %}
+    <div class="alert {{ 'alert-success' if result.correct else 'alert-danger' }}">
+      あなたの答え: <strong>{{ result.your_answer }}</strong><br>
+      正解: <strong>{{ result.correct_answer }}</strong><br>
+      結果: {{ '正解！' if result.correct else '不正解！' }}
+    </div>
+    <a href="/test" class="btn btn-secondary">次の問題へ</a>
+    {% endif %}
+
+    {% if not question %}
+    <p>履歴がありません。単語帳を作成してください。</p>
+    {% endif %}
+
+    <a href="/" class="btn btn-link mt-4">← 単語帳アプリに戻る</a>
+  </div>
+</body>
+</html>

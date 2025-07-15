@@ -3,6 +3,8 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 import json
+import re
+import random
 
 HISTORY_FILE = "vocab_history.json"
 def save_history(entry):
@@ -15,7 +17,7 @@ def save_history(entry):
         history = []
 
     history.insert(0, entry)  # 新しいエントリを先頭に追加
-    history = history[:10]  # 最新の10件のみ保持
+    history = history[:5000]  
 
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2) 
@@ -25,7 +27,7 @@ def load_history():
         try:
             with open(HISTORY_FILE, "r", encoding="utf-8") as f:
                 history = json.load(f)
-                return history[:10]  # 最新の10件のみ返す
+                return history[:10000]
         except json.JSONDecodeError:
             return []
     return []
@@ -47,6 +49,9 @@ app = Flask(__name__)
 
 # 単語帳を生成する関数 (GPT API)
 def generate_vocab(text):
+    if not text.strip():
+        return []
+    
     prompt = f"""
 次の英文から重要な英単語を5つ抽出し、それぞれの意味(日本語)と例文(英語)を出力してください
 
@@ -57,12 +62,15 @@ def generate_vocab(text):
 英文:
 {text}
 """
-
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        temperature=0.7,
-        messages=[{"role": "user", "content": prompt}]
-    )
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            temperature=0.7,
+            messages=[{"role": "user", "content": prompt}]
+        )
+    except Exception as e:
+        print("OpenAI API error:", e)
+        return []
 
     result_text = response.choices[0].message.content.strip()
 
@@ -73,7 +81,7 @@ def generate_vocab(text):
             parts = [p.strip() for p in line.split("|")]
             if len(parts) == 3:
                 vocab_list.append({
-                    "word": parts[0],
+                    "word": re.sub(r"^\d+\.\s*", "", parts[0]),
                     "meaning": parts[1].replace("意味:", "").strip(),
                     "example": parts[2].replace("例文:", "").strip()
                 })
@@ -89,49 +97,79 @@ def generate_vocab(text):
 def index():
     vocab_list = []
     user_input = ""
+    
     if request.method == "POST":
-        user_input = request.form["english_text"]
-        vocab_list = generate_vocab(user_input)
-    history = load_history()
-    return render_template("index.html", vocab_list=vocab_list, user_input=user_input, history=history)
-
-@app.route("/delete/<int:index>", methods=["POST"])
-def delete_entry(index):
-    if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            history = json.load(f)
-        if 0 <= index < len(history):
-            del history[index]
-            with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-                json.dump(history, f, ensure_ascii=False, indent=2)
-    return redirect(url_for("index"))
-
-@app.route("/delete_all", methods=["POST"])
-def delete_all():
-    if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
-    return redirect(url_for("index"))
+        user_input = request.form["english_text"].strip()
+    
+        if user_input:
+            vocab_list = generate_vocab(user_input)
+            
+    return render_template("index.html", vocab_list=vocab_list, user_input=user_input)
 
 @app.route("/download_csv")
 def download_csv():
     history = load_history()
     if not history:
         return "履歴がありません", 404
-
-    vocab_list = history[0]["vocab"]
+    
+    seen_words = set()
+    unique_vocab = []
+    
+    for record in history:
+        for item in record["vocab"]:
+            word = item["word"]
+            if word not in seen_words:
+                seen_words.add(word)
+                unique_vocab.append(item)
 
     csv_content = "単語,意味,例文\n"
-    for item in vocab_list:
-        csv_content += f"{item['word']},{item['meaning']},{item['example']}\n"
+    for item in unique_vocab:
+        word = item['word'].replace(',', ', ')
+        meaning = item['meaning'].replace(',', ', ')
+        example = item['example'].replace(',', ', ')
+        csv_content += f"{word},{meaning},{example}\n"                          
 
+    bom_encoded = csv_content.encode("utf-8-sig")
+    
     return Response(
-        csv_content,
+        bom_encoded,
         mimetype="text/csv",
-        headers={"Content-Disposition": "attachment;filename=vocab.csv"}
+        headers={"Content-Disposition": "attachment;filename=vocab_unique.csv"}
     )
 
+@app.route("/clear_history", methods=["POST"])
+def clear_history():
+    with open("vocab_history.json", "w", encoding="utf-8") as f:
+        json.dump([], f, ensure_ascii=False, indent=2)
+    return redirect(url_for("index", cleared="1"))
+
+@app.route("/test", methods=["GET", "POST"])
+def test():
+    history = load_history()
+    all_vocab = [item for record in history for item in record["vocab"]]
+
+    if not all_vocab:
+        return render_template("test.html", question=None)
+
+    if request.method == "POST":
+        answer = request.form["answer"]
+        correct_word = request.form["correct_word"]
+        correct_meaning = request.form["correct_meaning"]
+        is_correct = answer.strip() == correct_meaning.strip()
+
+        result = {
+            "your_answer": answer,
+            "correct_answer": correct_meaning,
+            "correct": is_correct
+        }
+
+        # 次の問題も出す
+        question = random.choice(all_vocab)
+        return render_template("test.html", question=question, result=result)
+
+    else:
+        question = random.choice(all_vocab)
+        return render_template("test.html", question=question)
+
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
+    app.run(host="0.0.0.0", port=5002, debug=True)

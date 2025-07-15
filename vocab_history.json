@@ -1,301 +1,181 @@
 [
   {
-    "input": "For the math section, the rate slid to 58.2 pct from 63.6 pct among elementary school sixth-graders and to 48.8 pct from 53.0 pct among junior high school third-graders.",
+    "input": "He was accused of destroying or disposing of over $28,000 worth of government-provided Covid vaccines and handing out at least 1,937 false vaccine record cards in exchange for payment.",
     "vocab": [
       {
-        "word": "rate",
-        "meaning": "比率",
-        "example": "The interest rate on the loan is 3%."
+        "word": "accused",
+        "meaning": "指摘された",
+        "example": "He was accused of stealing money from the company."
       },
       {
-        "word": "slide",
-        "meaning": "滑る、下がる",
-        "example": "The company's stock price slid by 10% after the earnings report."
+        "word": "destroying",
+        "meaning": "破壊する",
+        "example": "The tornado destroyed several houses in the neighborhood."
       },
       {
-        "word": "elementary",
-        "meaning": "初等の",
-        "example": "She teaches at an elementary school."
+        "word": "disposing",
+        "meaning": "処分する",
+        "example": "She disposed of the old furniture by selling it online."
       },
       {
-        "word": "junior",
-        "meaning": "後輩の、下級の",
-        "example": "He is a junior member of the team."
+        "word": "vaccines",
+        "meaning": "ワクチン",
+        "example": "The new vaccines are being distributed to hospitals."
       },
       {
-        "word": "grader",
-        "meaning": "学年",
-        "example": "She is a third-grader in junior high school."
+        "word": "record",
+        "meaning": "記録",
+        "example": "The athlete broke the world record in the 100-meter dash."
       }
     ]
   },
   {
-    "input": "  In science, whose test was conducted for the first time in three years, the correct answer rate rose to 57.3 pct from 49.7 pct in fiscal 2022 among elementary school sixth-graders.",
+    "input": "Michael Kirk Moore, a plastic surgeon in the western state of Utah, was charged by the Department of Justice in 2023 alongside his clinic and three others for running a scheme to defraud the government.",
     "vocab": [
       {
-        "word": "science",
-        "meaning": "科学",
-        "example": "She is studying computer science at university."
+        "word": "surgeon",
+        "meaning": "医師",
+        "example": "Michael Kirk Moore is a plastic surgeon in Utah."
       },
       {
-        "word": "test",
-        "meaning": "テスト",
-        "example": "I have a math test tomorrow."
+        "word": "charged",
+        "meaning": "起訴された",
+        "example": "Michael Kirk Moore was charged by the Department of Justice in 2023."
       },
       {
-        "word": "conducted",
-        "meaning": "行われた",
-        "example": "The experiment was conducted by a team of researchers."
+        "word": "scheme",
+        "meaning": "陰謀",
+        "example": "They were running a scheme to defraud the government."
       },
       {
-        "word": "correct",
-        "meaning": "正しい",
-        "example": "Please choose the correct answer from the options."
+        "word": "defraud",
+        "meaning": "詐欺を働く",
+        "example": "The clinic was charged for defrauding the government."
       },
       {
-        "word": "rate",
-        "meaning": "割合",
-        "example": "The unemployment rate has been decreasing steadily."
+        "word": "clinic",
+        "meaning": "診療所",
+        "example": "The clinic was charged alongside Michael Kirk Moore."
       }
     ]
   },
   {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "input": "Michael Kirk Moore, a plastic surgeon in the western state of Utah, was charged by the Department of Justice in 2023 alongside his clinic and three others for running a scheme to defraud the government.",
     "vocab": [
       {
-        "word": "rate",
-        "meaning": "割合、率",
-        "example": "The unemployment rate in the country has been steadily decreasing."
+        "word": "surgeon",
+        "meaning": "外科医",
+        "example": "Dr. Moore is a highly skilled surgeon who specializes in plastic surgery."
       },
       {
-        "word": "sagged",
-        "meaning": "下がる、垂れ下がる",
-        "example": "The old bridge sagged under the weight of the heavy trucks."
+        "word": "charged",
+        "meaning": "起訴された",
+        "example": "The man was charged with robbery and assault."
       },
       {
-        "word": "struggled",
-        "meaning": "苦労する、もがく",
-        "example": "He struggled to finish the difficult project on time."
+        "word": "scheme",
+        "meaning": "たくらみ",
+        "example": "The company devised a clever marketing scheme to attract more customers."
       },
       {
-        "word": "writing tasks",
-        "meaning": "書き込み課題、ライティング課題",
-        "example": "The students were assigned various writing tasks to improve their language skills."
+        "word": "defraud",
+        "meaning": "詐欺行為をする",
+        "example": "The con artist was arrested for attempting to defraud elderly people."
       },
       {
-        "word": "introduced",
-        "meaning": "導入する、紹介する",
-        "example": "The company introduced a new product line last month."
+        "word": "government",
+        "meaning": "政府",
+        "example": "The government announced new measures to tackle unemployment."
       }
     ]
   },
   {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "input": "Michael Kirk Moore, a plastic surgeon in the western state of Utah, was charged by the Department of Justice in 2023 alongside his clinic and three others for running a scheme to defraud the government.",
     "vocab": [
       {
-        "word": "rate",
-        "meaning": "比率",
-        "example": "The unemployment rate in the city decreased by 2% last month."
+        "word": "plastic surgeon",
+        "meaning": "形成外科医",
+        "example": "Dr. Moore is a renowned plastic surgeon known for his expertise in cosmetic procedures."
       },
       {
-        "word": "sagged",
-        "meaning": "下がる",
-        "example": "The stock market sagged after the disappointing earnings report."
+        "word": "charged",
+        "meaning": "起訴される",
+        "example": "The suspect was charged with robbery and assault."
       },
       {
-        "word": "pct",
-        "meaning": "パーセント",
-        "example": "The store is offering a 20 pct discount on all items."
+        "word": "scheme",
+        "meaning": "たくらみ",
+        "example": "The company was involved in a fraudulent scheme to evade taxes."
       },
       {
-        "word": "struggled",
-        "meaning": "苦労する",
-        "example": "She struggled with the difficult math problem for hours."
+        "word": "defraud",
+        "meaning": "詐欺を行う",
+        "example": "The con artist managed to defraud unsuspecting victims of thousands of dollars."
       },
       {
-        "word": "format",
-        "meaning": "形式",
-        "example": "The report must be submitted in a specific format."
+        "word": "government",
+        "meaning": "政府",
+        "example": "The government announced new measures to boost the economy."
       }
     ]
   },
   {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "input": "Michael Kirk Moore, a plastic surgeon in the western state of Utah, was charged by the Department of Justice in 2023 alongside his clinic and three others for running a scheme to defraud the government.",
     "vocab": [
       {
-        "word": "rate",
-        "meaning": "比率",
-        "example": "The unemployment rate in the country has been steadily decreasing."
+        "word": "surgeon",
+        "meaning": "医師",
+        "example": "He underwent surgery performed by a skilled surgeon."
       },
       {
-        "word": "sagged",
-        "meaning": "下がる",
-        "example": "The stock prices sagged after the company announced its quarterly earnings."
+        "word": "charged",
+        "meaning": "起訴された",
+        "example": "The suspect was charged with theft."
       },
       {
-        "word": "pct (abbreviation for percent)",
-        "meaning": "パーセント",
-        "example": "The product saw a sales increase of 10 pct last quarter."
+        "word": "scheme",
+        "meaning": "計画",
+        "example": "She came up with a brilliant scheme to increase sales."
       },
       {
-        "word": "struggled",
-        "meaning": "苦労する",
-        "example": "She struggled to finish her homework before the deadline."
+        "word": "defraud",
+        "meaning": "詐欺を働く",
+        "example": "The company was found guilty of defrauding its customers."
       },
       {
-        "word": "task",
-        "meaning": "課題",
-        "example": "Completing this task will require teamwork and collaboration."
+        "word": "clinic",
+        "meaning": "診療所",
+        "example": "She works at a free clinic in the inner city."
       }
     ]
   },
   {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
+    "input": "Michael Kirk Moore, a plastic surgeon in the western state of Utah, was charged by the Department of Justice in 2023 alongside his clinic and three others for running a scheme to defraud the government.",
     "vocab": [
       {
-        "word": "rate",
-        "meaning": "比率",
-        "example": "The unemployment rate in the country has been steadily increasing."
+        "word": "surgeon",
+        "meaning": "医師",
+        "example": "The surgeon performed a successful operation on the patient."
       },
       {
-        "word": "sagged",
-        "meaning": "下がる",
-        "example": "The sales figures sagged after the holiday season."
+        "word": "charged",
+        "meaning": "起訴された",
+        "example": "The suspect was charged with theft."
       },
       {
-        "word": "pct",
-        "meaning": "パーセント",
-        "example": "The company reported a 10 pct increase in profits."
+        "word": "scheme",
+        "meaning": "陰謀、計画",
+        "example": "The company devised a scheme to increase profits."
       },
       {
-        "word": "format",
-        "meaning": "フォーマット",
-        "example": "Please make sure to save the document in the correct format."
+        "word": "defraud",
+        "meaning": "詐欺を働く",
+        "example": "The scam artist was arrested for attempting to defraud elderly citizens."
       },
       {
-        "word": "struggled",
-        "meaning": "苦労する",
-        "example": "She struggled to finish her homework on time."
-      }
-    ]
-  },
-  {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
-    "vocab": [
-      {
-        "word": "1. sagged",
-        "meaning": "下落する",
-        "example": "The sales of the company sagged due to economic downturn."
-      },
-      {
-        "word": "2. rate",
-        "meaning": "割合、率",
-        "example": "The unemployment rate in the country has been increasing."
-      },
-      {
-        "word": "3. third-graders",
-        "meaning": "三年生",
-        "example": "The third-graders had a field trip to the museum."
-      },
-      {
-        "word": "4. format",
-        "meaning": "形式、フォーマット",
-        "example": "The document should be saved in PDF format."
-      },
-      {
-        "word": "5. struggled",
-        "meaning": "苦労する、もがく",
-        "example": "She struggled with the difficult math problem."
-      }
-    ]
-  },
-  {
-    "input": "Among junior high school third-graders, the rate sagged to 54.6 pct from 58.4 pct, the lowest level since the current question format was introduced in fiscal 2019. They struggled with writing tasks in particular.",
-    "vocab": [
-      {
-        "word": "rate",
-        "meaning": "率、割合",
-        "example": "The unemployment rate in the country has been steadily decreasing."
-      },
-      {
-        "word": "sagged",
-        "meaning": "下がる、低下する",
-        "example": "The stock prices sagged after the company announced poor quarterly earnings."
-      },
-      {
-        "word": "struggled",
-        "meaning": "苦労する、困難に直面する",
-        "example": "She struggled to finish the marathon, but eventually crossed the finish line."
-      },
-      {
-        "word": "writing",
-        "meaning": "書くこと、執筆",
-        "example": "Her writing skills improved after taking a creative writing class."
-      },
-      {
-        "word": "tasks",
-        "meaning": "仕事、課題",
-        "example": "He had a lot of tasks to complete before the deadline."
-      }
-    ]
-  },
-  {
-    "input": "The correct answer rate for the Japanese language section dropped to 67.0 pct from 67.8 pct among elementary school sixth-graders.",
-    "vocab": [
-      {
-        "word": "answer",
-        "meaning": "答え",
-        "example": "She quickly found the answer to the difficult question."
-      },
-      {
-        "word": "rate",
-        "meaning": "割合",
-        "example": "The success rate of the project was higher than expected."
-      },
-      {
-        "word": "Japanese",
-        "meaning": "日本語",
-        "example": "He is studying Japanese at the university."
-      },
-      {
-        "word": "section",
-        "meaning": "部分",
-        "example": "Please turn to the next section of the book."
-      },
-      {
-        "word": "dropped",
-        "meaning": "減少した",
-        "example": "The temperature dropped significantly overnight."
-      }
-    ]
-  },
-  {
-    "input": "he average correct answer rates in Japanese language and math sections of a national achievement test for students in Japan in fiscal 2025 fell from the previous year, the education ministry said Monday.",
-    "vocab": [
-      {
-        "word": "1. average",
-        "meaning": "平均",
-        "example": "The average score on the test was 75%."
-      },
-      {
-        "word": "2. correct",
-        "meaning": "正しい",
-        "example": "Make sure to give the correct answer."
-      },
-      {
-        "word": "3. achievement",
-        "meaning": "達成",
-        "example": "Winning the competition was a great achievement for him."
-      },
-      {
-        "word": "4. ministry",
-        "meaning": "省庁",
-        "example": "The Ministry of Education is responsible for the school system."
-      },
-      {
-        "word": "5. fiscal",
-        "meaning": "予算の",
-        "example": "The company's fiscal year ends in March."
+        "word": "government",
+        "meaning": "政府",
+        "example": "The government announced new regulations to improve public safety."
       }
     ]
   }
