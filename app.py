@@ -180,20 +180,25 @@ def test():
         is_correct = answer.strip() == correct_meaning.strip()
         
         score = save_score(1 if is_correct else 0)
+        
+        # ✅ 元の問題を再構築（再度ランダムにしない）
+        question = {
+            "word": correct_word,
+            "meaning": correct_meaning
+        }
+
+        other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != correct_word})
+        distractors = random.sample(other_meanings, min(3, len(other_meanings)))
+        options = [correct_meaning] + distractors
+        random.shuffle(options)
+
+        question["options"] = options
 
         result = {
             "your_answer": answer,
             "correct_answer": correct_meaning,
             "correct": is_correct
         }
-
-        question = random.choice(all_vocab)
-        other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != question["word"]})
-        distractors = random.sample(other_meanings, min(3, len(other_meanings)))
-        options = [question["meaning"]] + distractors
-        random.shuffle(options)
-
-        question["options"] = options
 
         return render_template("test.html", question=question, result=result, score=score)
 

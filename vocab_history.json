@@ -1,5 +1,35 @@
 [
   {
+    "input": "Researchers at the University of Osaka Hospital conducted surgeries last year to reduce the number of fetuses in 10 cases of multiple pregnancy, it has been learned.",
+    "vocab": [
+      {
+        "word": "Researchers",
+        "meaning": "研究者",
+        "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
+      },
+      {
+        "word": "University",
+        "meaning": "大学",
+        "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
+      },
+      {
+        "word": "Hospital",
+        "meaning": "病院",
+        "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
+      },
+      {
+        "word": "Surgeries",
+        "meaning": "手術",
+        "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
+      },
+      {
+        "word": "Fetuses",
+        "meaning": "胎児",
+        "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
+      }
+    ]
+  },
+  {
     "input": "The BOJ introduced its quantitative and qualitative monetary easing policy in April 2013, aiming to achieve 2 pct inflation in about two years.",
     "vocab": [
       {
