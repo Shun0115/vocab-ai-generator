@@ -5,6 +5,66 @@
       {
         "word": "Researchers",
         "meaning": "研究者",
+        "example": "Researchers are studying the effects of climate change on marine life."
+      },
+      {
+        "word": "University",
+        "meaning": "大学",
+        "example": "She graduated from a prestigious university in Tokyo."
+      },
+      {
+        "word": "Surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent two surgeries to remove the tumor."
+      },
+      {
+        "word": "Fetuses",
+        "meaning": "胎児",
+        "example": "The ultrasound showed two healthy fetuses."
+      },
+      {
+        "word": "Multiple",
+        "meaning": "複数の",
+        "example": "She had multiple tasks to complete before the end of the day."
+      }
+    ]
+  },
+  {
+    "input": "Researchers at the University of Osaka Hospital conducted surgeries last year to reduce the number of fetuses in 10 cases of multiple pregnancy, it has been learned.",
+    "vocab": [
+      {
+        "word": "Researchers",
+        "meaning": "研究者",
+        "example": "The researchers conducted a study on the effects of caffeine on heart health."
+      },
+      {
+        "word": "University",
+        "meaning": "大学",
+        "example": "She graduated from the University of Tokyo with a degree in economics."
+      },
+      {
+        "word": "Hospital",
+        "meaning": "病院",
+        "example": "He was rushed to the hospital after a car accident."
+      },
+      {
+        "word": "Surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent multiple surgeries to remove the tumor."
+      },
+      {
+        "word": "Fetuses",
+        "meaning": "胎児",
+        "example": "Ultrasound showed two healthy fetuses in the womb."
+      }
+    ]
+  },
+  {
+    "input": "Researchers at the University of Osaka Hospital conducted surgeries last year to reduce the number of fetuses in 10 cases of multiple pregnancy, it has been learned.",
+    "vocab": [
+      {
+        "word": "Researchers",
+        "meaning": "研究者",
         "example": "Researchers at the University of Osaka Hospital conducted surgeries last year."
       },
       {
