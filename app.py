@@ -6,6 +6,26 @@ import json
 import re
 import random
 
+SCORE_FILE = "test_score.json"
+
+def load_score():
+    if os.path.exists(SCORE_FILE):
+        try:
+            with open(SCORE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            # ファイルが空または壊れている場合、初期スコアにする
+            return {"correct": 0, "total": 0}
+    return {"correct": 0, "total": 0}
+
+def save_score(correct_increment):
+    score = load_score()
+    score["correct"] += correct_increment
+    score["total"] += 1
+    with open(SCORE_FILE, "w", encoding="utf-8") as f:
+        json.dump(score, f, ensure_ascii=False, indent=2)
+    return score
+
 HISTORY_FILE = "vocab_history.json"
 def save_history(entry):
     
@@ -143,6 +163,8 @@ def clear_history():
         json.dump([], f, ensure_ascii=False, indent=2)
     return redirect(url_for("index", cleared="1"))
 
+import random  # すでに import されています
+
 @app.route("/test", methods=["GET", "POST"])
 def test():
     history = load_history()
@@ -156,6 +178,8 @@ def test():
         correct_word = request.form["correct_word"]
         correct_meaning = request.form["correct_meaning"]
         is_correct = answer.strip() == correct_meaning.strip()
+        
+        score = save_score(1 if is_correct else 0)
 
         result = {
             "your_answer": answer,
@@ -163,13 +187,26 @@ def test():
             "correct": is_correct
         }
 
-        # 次の問題も出す
         question = random.choice(all_vocab)
-        return render_template("test.html", question=question, result=result)
+        other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != question["word"]})
+        distractors = random.sample(other_meanings, min(3, len(other_meanings)))
+        options = [question["meaning"]] + distractors
+        random.shuffle(options)
+
+        question["options"] = options
+
+        return render_template("test.html", question=question, result=result, score=score)
 
     else:
         question = random.choice(all_vocab)
-        return render_template("test.html", question=question)
+        other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != question["word"]})
+        distractors = random.sample(other_meanings, min(3, len(other_meanings)))
+        options = [question["meaning"]] + distractors
+        random.shuffle(options)
+        question["options"] = options
+        score = load_score()
+
+        return render_template("test.html", question=question, score=score)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5002, debug=True)

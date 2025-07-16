@@ -1,5 +1,215 @@
 [
   {
+    "input": "The BOJ introduced its quantitative and qualitative monetary easing policy in April 2013, aiming to achieve 2 pct inflation in about two years.",
+    "vocab": [
+      {
+        "word": "introduced",
+        "meaning": "紹介された",
+        "example": "The company introduced a new product to the market last week."
+      },
+      {
+        "word": "quantitative",
+        "meaning": "量的な",
+        "example": "The scientist conducted a quantitative study to analyze the data."
+      },
+      {
+        "word": "qualitative",
+        "meaning": "質的な",
+        "example": "The teacher assessed the students' understanding through qualitative observations."
+      },
+      {
+        "word": "inflation",
+        "meaning": "インフレーション",
+        "example": "The government implemented measures to control inflation in the economy."
+      },
+      {
+        "word": "policy",
+        "meaning": "政策",
+        "example": "The company decided to change its marketing policy to attract more customers."
+      }
+    ]
+  },
+  {
+    "input": "The BOJ introduced its quantitative and qualitative monetary easing policy in April 2013, aiming to achieve 2 pct inflation in about two years.",
+    "vocab": [
+      {
+        "word": "introduced",
+        "meaning": "導入する",
+        "example": "The company introduced a new product line last month."
+      },
+      {
+        "word": "quantitative",
+        "meaning": "量的な",
+        "example": "The researchers conducted a quantitative analysis of the data."
+      },
+      {
+        "word": "qualitative",
+        "meaning": "質的な",
+        "example": "The teacher emphasized the importance of qualitative research methods."
+      },
+      {
+        "word": "monetary",
+        "meaning": "金融の",
+        "example": "The government announced new monetary policies to stabilize the economy."
+      },
+      {
+        "word": "inflation",
+        "meaning": "インフレーション",
+        "example": "Rising prices have led to high inflation rates in the country."
+      }
+    ]
+  },
+  {
+    "input": "Bank of Japan policymakers were dragged into a prolonged struggle with deflation in the first half of 2015, two years after the central bank's introduction of its massive monetary easing policy, transcripts from their meetings showed Wednesday.",
+    "vocab": [
+      {
+        "word": "policymakers",
+        "meaning": "政策立案者",
+        "example": "The policymakers are discussing the new economic measures."
+      },
+      {
+        "word": "struggle",
+        "meaning": "苦闘する",
+        "example": "The company is struggling to stay afloat during the economic downturn."
+      },
+      {
+        "word": "deflation",
+        "meaning": "デフレーション",
+        "example": "The country's economy is facing deflationary pressures."
+      },
+      {
+        "word": "massive",
+        "meaning": "巨大な",
+        "example": "The company announced a massive restructuring plan."
+      },
+      {
+        "word": "transcripts",
+        "meaning": "記録",
+        "example": "The transcripts of the meeting will be distributed to all participants."
+      }
+    ]
+  },
+  {
+    "input": "Bank of Japan policymakers were dragged into a prolonged struggle with deflation in the first half of 2015, two years after the central bank's introduction of its massive monetary easing policy, transcripts from their meetings showed Wednesday.",
+    "vocab": [
+      {
+        "word": "policymakers",
+        "meaning": "政策立案者",
+        "example": "The policymakers are discussing new measures to boost the economy."
+      },
+      {
+        "word": "struggle",
+        "meaning": "苦闘する",
+        "example": "The company is struggling to stay afloat in the current market conditions."
+      },
+      {
+        "word": "deflation",
+        "meaning": "デフレーション",
+        "example": "The country's economy is facing the threat of deflation."
+      },
+      {
+        "word": "transcripts",
+        "meaning": "議事録",
+        "example": "The transcripts of the meeting will be distributed to all participants."
+      },
+      {
+        "word": "easing",
+        "meaning": "緩和",
+        "example": "The central bank announced a new easing policy to stimulate economic growth."
+      }
+    ]
+  },
+  {
+    "input": "Speaking to reporters at an air force base near Washington, Trump said that \"if Japan would open up their country,\" he \"will veer from\" a deal through a letter. \"They don't do that.\"",
+    "vocab": [
+      {
+        "word": "open up",
+        "meaning": "開放する",
+        "example": "Japan should open up their country to foreign businesses."
+      },
+      {
+        "word": "veer",
+        "meaning": "方向を変える",
+        "example": "The car suddenly veered off the road."
+      },
+      {
+        "word": "deal",
+        "meaning": "取引",
+        "example": "The two companies signed a multi-million dollar deal."
+      },
+      {
+        "word": "reporter",
+        "meaning": "報道記者",
+        "example": "The reporter asked the president a tough question during the press conference."
+      },
+      {
+        "word": "base",
+        "meaning": "基地",
+        "example": "The air force base is located just outside of the city."
+      }
+    ]
+  },
+  {
+    "input": "U.S. President Donald Trump on Tuesday reiterated his complaint that Japan does not open its markets further to imports.",
+    "vocab": [
+      {
+        "word": "reiterated",
+        "meaning": "繰り返す",
+        "example": "The professor reiterated the importance of studying for the upcoming exam."
+      },
+      {
+        "word": "complaint",
+        "meaning": "不満",
+        "example": "She lodged a complaint with the manager about the poor service at the restaurant."
+      },
+      {
+        "word": "open",
+        "meaning": "開く",
+        "example": "Can you please open the window to let some fresh air in?"
+      },
+      {
+        "word": "markets",
+        "meaning": "市場",
+        "example": "The stock markets were volatile today due to uncertainty in global trade."
+      },
+      {
+        "word": "imports",
+        "meaning": "輸入品",
+        "example": "The company specializes in importing luxury goods from Europe."
+      }
+    ]
+  },
+  {
+    "input": "Moore's trial began this week at a federal court in Salt Lake City.\r\nBut on Tuesday, Republican lawmaker Marjorie Taylor Greene, one of Trump's most vocal hard-right supporters, said she had written to Bondi calling for charges against Moore to be dropped.",
+    "vocab": [
+      {
+        "word": "trial",
+        "meaning": "裁判",
+        "example": "The trial of the suspect began yesterday."
+      },
+      {
+        "word": "federal",
+        "meaning": "連邦の",
+        "example": "The federal government has imposed new regulations."
+      },
+      {
+        "word": "Republican",
+        "meaning": "共和党の",
+        "example": "He is a strong supporter of the Republican party."
+      },
+      {
+        "word": "charges",
+        "meaning": "起訴",
+        "example": "The police filed charges against the suspect."
+      },
+      {
+        "word": "dropped",
+        "meaning": "取り下げられた",
+        "example": "The charges against him were dropped due to lack of evidence."
+      }
+    ]
+  },
+  {
     "input": "He was accused of destroying or disposing of over $28,000 worth of government-provided Covid vaccines and handing out at least 1,937 false vaccine record cards in exchange for payment.",
     "vocab": [
       {
