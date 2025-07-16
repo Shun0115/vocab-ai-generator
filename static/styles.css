@@ -1,23 +1,28 @@
-/* light mode (デフォルト) */
+/* ✅ ライトモード */
 body.light-mode {
   background-color: #ffffff;
   color: #000000;
 }
 
+/* ✅ ダークモード */
 body.dark-mode {
-  background-color: #1e1e1e;
-  color: #dddddd;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-/* テーブル・ボタンなどの追加スタイル */
+/* ✅ テーブルの背景と文字色（ダークモード用） */
 body.dark-mode .table {
   background-color: #2a2a2a;
   color: #ffffff;
 }
+
+/* ✅ ボタンのスタイル（ダークモード用） */
 body.dark-mode .btn {
   background-color: #444 !important;
   color: #fff !important;
 }
+
+/* ✅ テーマ切替ボタン（任意） */
 .toggle-btn {
   position: fixed;
   top: 10px;

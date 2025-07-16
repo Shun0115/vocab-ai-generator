@@ -5,30 +5,28 @@
   <meta charset="utf-8">
   <title>英単語テスト（選択式）</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
-<body class="p-4">
+<body class="p-4" id="page-body">
   <div class="container">
-    <h2> 単語テスト（選択式）</h2>
+    <h2>単語テスト（選択式）</h2>
+
     {% if score %}
     <div class="alert alert-info">
       現在のスコア: <strong>{{ score.correct }}</strong> / <strong>{{ score.total }}</strong> 回正解
       (正答率: {{ (score.correct / score.total * 100) | round(1) if score.total > 0 else 0 }}%)
     </div>
     {% endif %}
+
     {% if question %}
     <form method="POST" class="mb-3">
       <p><strong>{{ question.word }}</strong> の意味として正しいものを選んでください：</p>
-      {% set options = [question.meaning] + (question.distractors or []) %}
-      {% set shuffled_options = options|random %}
-
       {% for option in question.options %}
       <div class="form-check">
         <input class="form-check-input" type="radio" name="answer" value="{{ option }}" id="option{{ loop.index }}"
           required>
-        <label class="form-check-label" for="option{{ loop.index }}">
-          {{ option }}
-        </label>
+        <label class="form-check-label" for="option{{ loop.index }}">{{ option }}</label>
       </div>
       {% endfor %}
 
@@ -45,15 +43,25 @@
       正解: <strong>{{ result.correct_answer }}</strong><br>
       結果: {{ '正解！' if result.correct else '不正解！' }}
     </div>
-    <a href="/test" class="btn btn-secondary">次の問題へ</a>
+    <div class="d-flex gap-3 mt-4">
+      <a href="/test" class="btn btn-secondary">次の問題へ</a>
+      <a href="/" class="btn btn-link">← 単語帳アプリに戻る</a>
+    </div>
     {% endif %}
+    
+    </div>
 
-    {% if not question %}
-    <p>履歴がありません。単語帳を作成してください。</p>
-    {% endif %}
-
-    <a href="/" class="btn btn-link mt-4">← 単語帳アプリに戻る</a>
-  </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const theme = document.cookie.match(/theme=(dark|light)/);
+        if (theme) {
+          const body = document.getElementById("page-body");
+          if (body) {
+            body.classList.add(theme[1] + "-mode");
+          }
+        }
+      });
+    </script>
 </body>
 
 </html>

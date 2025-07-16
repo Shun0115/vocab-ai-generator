@@ -1,5 +1,335 @@
 [
   {
+    "input": "A Chinese district court Wednesday sentenced a Japanese man in his 60s to three years and six months in prison for espionage.\r\n   The employee of Japanese drugmaker Astellas Pharma Inc. was detained by Chinese authorities in March 2023 shortly before leaving for Japan after completing his assignment term in China.",
+    "vocab": [
+      {
+        "word": "sentenced",
+        "meaning": "判決を下す",
+        "example": "The judge sentenced the criminal to ten years in prison."
+      },
+      {
+        "word": "espionage",
+        "meaning": "スパイ活動",
+        "example": "The spy was caught engaging in espionage activities."
+      },
+      {
+        "word": "detained",
+        "meaning": "拘留された",
+        "example": "The suspect was detained by the police for questioning."
+      },
+      {
+        "word": "authorities",
+        "meaning": "当局",
+        "example": "The authorities are investigating the cause of the fire."
+      },
+      {
+        "word": "completing",
+        "meaning": "完了する",
+        "example": "She is close to completing her degree in computer science."
+      }
+    ]
+  },
+  {
+    "input": "According to Professor Masayuki Endo of the research team, surgeries were performed with consent between March and December last year on 10 pregnant women in their 20s to 40s who had pregnancies of triplets or more, or had two fetuses but suffered serious complications.",
+    "vocab": [
+      {
+        "word": "surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent two surgeries to remove the tumor."
+      },
+      {
+        "word": "consent",
+        "meaning": "同意",
+        "example": "The patient signed a consent form before the procedure."
+      },
+      {
+        "word": "pregnancies",
+        "meaning": "妊娠",
+        "example": "She had a difficult pregnancy but gave birth to a healthy baby."
+      },
+      {
+        "word": "triplets",
+        "meaning": "三つ子",
+        "example": "The couple was surprised to find out they were expecting triplets."
+      },
+      {
+        "word": "complications",
+        "meaning": "合併症",
+        "example": "The patient experienced complications after the surgery, requiring additional treatment."
+      }
+    ]
+  },
+  {
+    "input": "According to Professor Masayuki Endo of the research team, surgeries were performed with consent between March and December last year on 10 pregnant women in their 20s to 40s who had pregnancies of triplets or more, or had two fetuses but suffered serious complications.",
+    "vocab": [
+      {
+        "word": "surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent two surgeries to remove the tumor."
+      },
+      {
+        "word": "consent",
+        "meaning": "同意",
+        "example": "Before participating in the study, participants need to give their consent."
+      },
+      {
+        "word": "pregnancies",
+        "meaning": "妊娠",
+        "example": "She has had three pregnancies, and each one was different."
+      },
+      {
+        "word": "triplets",
+        "meaning": "三つ子",
+        "example": "The couple was surprised to find out they were expecting triplets."
+      },
+      {
+        "word": "complications",
+        "meaning": "合併症",
+        "example": "The patient experienced complications after the surgery, requiring additional treatment."
+      }
+    ]
+  },
+  {
+    "input": "According to Professor Masayuki Endo of the research team, surgeries were performed with consent between March and December last year on 10 pregnant women in their 20s to 40s who had pregnancies of triplets or more, or had two fetuses but suffered serious complications.",
+    "vocab": [
+      {
+        "word": "surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent three surgeries last year."
+      },
+      {
+        "word": "consent",
+        "meaning": "同意",
+        "example": "Before conducting the experiment, the participants must give their consent."
+      },
+      {
+        "word": "pregnancies",
+        "meaning": "妊娠",
+        "example": "She had two pregnancies before having her first child."
+      },
+      {
+        "word": "triplets",
+        "meaning": "三つ子",
+        "example": "The couple was surprised to find out they were expecting triplets."
+      },
+      {
+        "word": "complications",
+        "meaning": "合併症",
+        "example": "The patient experienced complications after the surgery."
+      }
+    ]
+  },
+  {
+    "input": "According to Professor Masayuki Endo of the research team, surgeries were performed with consent between March and December last year on 10 pregnant women in their 20s to 40s who had pregnancies of triplets or more, or had two fetuses but suffered serious complications.",
+    "vocab": [
+      {
+        "word": "surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent two surgeries to remove the tumor."
+      },
+      {
+        "word": "consent",
+        "meaning": "同意",
+        "example": "Before proceeding with the treatment, the doctor must obtain the patient's consent."
+      },
+      {
+        "word": "pregnancies",
+        "meaning": "妊娠",
+        "example": "She had a healthy pregnancy and gave birth to a beautiful baby girl."
+      },
+      {
+        "word": "triplets",
+        "meaning": "三つ子",
+        "example": "The couple was surprised to find out they were expecting triplets."
+      },
+      {
+        "word": "complications",
+        "meaning": "合併症",
+        "example": "The patient experienced complications after the surgery, requiring additional treatment."
+      }
+    ]
+  },
+  {
+    "input": "According to Professor Masayuki Endo of the research team, surgeries were performed with consent between March and December last year on 10 pregnant women in their 20s to 40s who had pregnancies of triplets or more, or had two fetuses but suffered serious complications.",
+    "vocab": [
+      {
+        "word": "consent",
+        "meaning": "同意",
+        "example": "All participants in the study gave their consent before the surgeries were performed."
+      },
+      {
+        "word": "pregnancies",
+        "meaning": "妊娠",
+        "example": "The doctor confirmed that the patient had multiple pregnancies during the ultrasound."
+      },
+      {
+        "word": "triplets",
+        "meaning": "三つ子",
+        "example": "The couple was surprised to find out they were expecting triplets."
+      },
+      {
+        "word": "complications",
+        "meaning": "合併症",
+        "example": "The patient experienced complications after the surgery and had to stay in the hospital longer than expected."
+      },
+      {
+        "word": "fetuses",
+        "meaning": "胎児",
+        "example": "The doctor monitored the growth of the fetuses closely throughout the pregnancy."
+      }
+    ]
+  },
+  {
+    "input": "It was the first time that the procedure was carried out as clinical research in Japan. The results were presented to the Japan Society of Perinatal and Neonatal Medicine.",
+    "vocab": [
+      {
+        "word": "procedure",
+        "meaning": "手順",
+        "example": "The procedure for conducting the experiment was carefully outlined."
+      },
+      {
+        "word": "clinical",
+        "meaning": "臨床の",
+        "example": "The new drug is currently undergoing clinical trials."
+      },
+      {
+        "word": "research",
+        "meaning": "研究",
+        "example": "The research team spent months collecting data for their study."
+      },
+      {
+        "word": "results",
+        "meaning": "結果",
+        "example": "The results of the experiment were unexpected."
+      },
+      {
+        "word": "presented",
+        "meaning": "提示された",
+        "example": "The findings were presented at the international conference."
+      }
+    ]
+  },
+  {
+    "input": "It was the first time that the procedure was carried out as clinical research in Japan. The results were presented to the Japan Society of Perinatal and Neonatal Medicine.",
+    "vocab": [
+      {
+        "word": "procedure",
+        "meaning": "手続き、手順",
+        "example": "The procedure for obtaining informed consent was clearly explained to the participants."
+      },
+      {
+        "word": "clinical",
+        "meaning": "臨床的な",
+        "example": "She is a clinical psychologist specializing in anxiety disorders."
+      },
+      {
+        "word": "research",
+        "meaning": "研究",
+        "example": "The team conducted extensive research on the effects of climate change."
+      },
+      {
+        "word": "presented",
+        "meaning": "提示された",
+        "example": "The findings were presented at an international conference."
+      },
+      {
+        "word": "Perinatal",
+        "meaning": "周産期の",
+        "example": "The hospital has a specialized unit for perinatal care."
+      }
+    ]
+  },
+  {
+    "input": "It was the first time that the procedure was carried out as clinical research in Japan. The results were presented to the Japan Society of Perinatal and Neonatal Medicine.",
+    "vocab": [
+      {
+        "word": "procedure",
+        "meaning": "手続き",
+        "example": "The procedure for obtaining informed consent was clearly explained to all participants."
+      },
+      {
+        "word": "clinical",
+        "meaning": "臨床の",
+        "example": "The patient's condition was closely monitored during the clinical trial."
+      },
+      {
+        "word": "research",
+        "meaning": "研究",
+        "example": "The research team collected data from various sources for their study."
+      },
+      {
+        "word": "results",
+        "meaning": "結果",
+        "example": "The results of the experiment showed a significant improvement in patient outcomes."
+      },
+      {
+        "word": "presented",
+        "meaning": "提示された",
+        "example": "The findings were presented at an international conference."
+      }
+    ]
+  },
+  {
+    "input": "It was the first time that the procedure was carried out as clinical research in Japan. The results were presented to the Japan Society of Perinatal and Neonatal Medicine.",
+    "vocab": [
+      {
+        "word": "procedure",
+        "meaning": "手続き",
+        "example": "The procedure for obtaining informed consent was carefully explained to the participants."
+      },
+      {
+        "word": "clinical",
+        "meaning": "臨床の",
+        "example": "She has many years of experience working in a clinical setting."
+      },
+      {
+        "word": "research",
+        "meaning": "研究",
+        "example": "The research team conducted a study on the effects of sleep on memory."
+      },
+      {
+        "word": "results",
+        "meaning": "結果",
+        "example": "The results of the experiment confirmed the hypothesis."
+      },
+      {
+        "word": "presented",
+        "meaning": "提示された",
+        "example": "The findings were presented at an international conference."
+      }
+    ]
+  },
+  {
+    "input": "Researchers at the University of Osaka Hospital conducted surgeries last year to reduce the number of fetuses in 10 cases of multiple pregnancy, it has been learned.",
+    "vocab": [
+      {
+        "word": "Researchers",
+        "meaning": "研究者",
+        "example": "The researchers conducted experiments to test their hypothesis."
+      },
+      {
+        "word": "University",
+        "meaning": "大学",
+        "example": "She graduated from a prestigious university in Tokyo."
+      },
+      {
+        "word": "Surgeries",
+        "meaning": "手術",
+        "example": "The patient underwent three surgeries to treat her condition."
+      },
+      {
+        "word": "Fetuses",
+        "meaning": "胎児",
+        "example": "The ultrasound showed two healthy fetuses in the womb."
+      },
+      {
+        "word": "Multiple",
+        "meaning": "複数の",
+        "example": "She is juggling multiple tasks at work."
+      }
+    ]
+  },
+  {
     "input": "Researchers at the University of Osaka Hospital conducted surgeries last year to reduce the number of fetuses in 10 cases of multiple pregnancy, it has been learned.",
     "vocab": [
       {
