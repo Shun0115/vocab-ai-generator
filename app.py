@@ -174,35 +174,30 @@ def test():
         return render_template("test.html", question=None)
 
     if request.method == "POST":
-        answer = request.form["answer"]
-        correct_word = request.form["correct_word"]
-        correct_meaning = request.form["correct_meaning"]
-        is_correct = answer.strip() == correct_meaning.strip()
-        
+        answer = request.form.get("answer", "")
+        correct_word = request.form.get("correct_word", "")
+        correct_meaning = request.form.get("correct_meaning", "")
+        auto_submit = request.form.get("auto_submit", "false") == "true"
+
+        if auto_submit or not answer:
+            is_correct = False
+            answer = "（時間切れ or 無回答）"
+        else:
+            is_correct = answer.strip() == correct_meaning.strip()
+
         score = save_score(1 if is_correct else 0)
-        
-        # ✅ 元の問題を再構築（再度ランダムにしない）
-        question = {
-            "word": correct_word,
-            "meaning": correct_meaning
-        }
 
-        other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != correct_word})
-        distractors = random.sample(other_meanings, min(3, len(other_meanings)))
-        options = [correct_meaning] + distractors
-        random.shuffle(options)
-
-        question["options"] = options
-
+        # ✅ 結果表示のみ、次の問題は GET で出す！
         result = {
             "your_answer": answer,
             "correct_answer": correct_meaning,
             "correct": is_correct
         }
 
-        return render_template("test.html", question=question, result=result, score=score)
+        return render_template("test.html", question=None, result=result, score=score)
 
     else:
+        # GET時：新しい問題を作成
         question = random.choice(all_vocab)
         other_meanings = list({v["meaning"] for v in all_vocab if v["word"] != question["word"]})
         distractors = random.sample(other_meanings, min(3, len(other_meanings)))

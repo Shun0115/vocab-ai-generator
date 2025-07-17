@@ -1,5 +1,65 @@
 [
   {
+    "input": "Concerns are growing among Japanese firms operating in China, after a Chinese court on Wednesday found an employee of major Japanese drugmaker Astellas Pharma Inc. guilty of spying.",
+    "vocab": [
+      {
+        "word": "Concerns",
+        "meaning": "心配、懸念",
+        "example": "There are growing concerns about the safety of the new product."
+      },
+      {
+        "word": "Japanese",
+        "meaning": "日本の",
+        "example": "She is studying the Japanese language."
+      },
+      {
+        "word": "Firms",
+        "meaning": "企業、会社",
+        "example": "The new law will affect small firms."
+      },
+      {
+        "word": "China",
+        "meaning": "中国",
+        "example": "He traveled to China for business."
+      },
+      {
+        "word": "Spying",
+        "meaning": "スパイ活動",
+        "example": "The government accused him of spying for a foreign country."
+      }
+    ]
+  },
+  {
+    "input": "Concerns are growing among Japanese firms operating in China, after a Chinese court on Wednesday found an employee of major Japanese drugmaker Astellas Pharma Inc. guilty of spying.\r\n   The district court sentenced the male Japanese employee of Astellas to three years and six months in prison for espionage. Details have not been disclosed on what acts led to the guilty ruling.",
+    "vocab": [
+      {
+        "word": "Concerns",
+        "meaning": "懸念",
+        "example": "The company has concerns about the safety of its employees in the current situation."
+      },
+      {
+        "word": "Growing",
+        "meaning": "成長している",
+        "example": "The company's profits have been steadily growing over the past few years."
+      },
+      {
+        "word": "Employee",
+        "meaning": "従業員",
+        "example": "The company is looking to hire a new employee for their sales team."
+      },
+      {
+        "word": "Guilty",
+        "meaning": "有罪の",
+        "example": "The defendant was found guilty of the crime and sentenced to prison."
+      },
+      {
+        "word": "Espionage",
+        "meaning": "スパイ活動",
+        "example": "The spy was caught in the act of espionage and arrested by the authorities."
+      }
+    ]
+  },
+  {
     "input": "A Chinese district court Wednesday sentenced a Japanese man in his 60s to three years and six months in prison for espionage.\r\n   The employee of Japanese drugmaker Astellas Pharma Inc. was detained by Chinese authorities in March 2023 shortly before leaving for Japan after completing his assignment term in China.",
     "vocab": [
       {
